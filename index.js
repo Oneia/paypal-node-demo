@@ -75,7 +75,7 @@ let paymentCard = {
   }]
 };
 
-payment = JSON.stringify(payment);
+paymentCard = JSON.stringify(paymentCard);
 
 app.post('/paypal', function (req, res){
   paypal.payment.create(paymentPayPal, function (error, payment) {
